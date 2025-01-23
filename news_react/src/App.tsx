@@ -1,19 +1,16 @@
-
-import "bootstrap/dist/css/bootstrap.min.css";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css'
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
+import PrincipalComponent from './components/PrincipalComponent';
 
 function App() {
-
   return (
     <BrowserRouter>
-        <Routes>
-          
-        </Routes>
-
+    <Routes>
+      <Route path='/' element={<PrincipalComponent/>} />
+    </Routes>
     </BrowserRouter>
-  );
-
+  )
 }
 
 export default App
